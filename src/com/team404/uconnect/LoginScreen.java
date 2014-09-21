@@ -38,6 +38,7 @@ public class LoginScreen extends Activity{
 		@Override
 		public void onClick(View v) {
 			// Authentication code here
+			// Writing text to commit
 			
 		}
 	};
