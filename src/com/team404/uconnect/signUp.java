@@ -2,9 +2,12 @@ package com.team404.uconnect;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 
-public class signUp extends Activity{
+public class SignUp extends Activity{
 	private EditText firstNameField;
 	private EditText lastNameField;
 	private EditText emailField;
@@ -15,12 +18,16 @@ public class signUp extends Activity{
 	private String email;
 	private String password;
 	private String confirmPassword;
+	private Button signUp;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash);
 		assignFields();
 		readText();
+		signUp = (Button)findViewById(R.id.signUp);
+		signUp.setText("Sign Up");
+		signUp.setOnClickListener(signUpListener);
 	}
 	private void assignFields() {
 		firstNameField = (EditText)findViewById(R.id.firstName);
@@ -36,4 +43,12 @@ public class signUp extends Activity{
 		 password = passwordField.getText().toString();
 		 confirmPassword = confirmPasswordField.getText().toString();
 	}
+	private OnClickListener signUpListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			// Send data to parse
+			
+		}
+	};
 }

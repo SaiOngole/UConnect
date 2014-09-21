@@ -1,6 +1,7 @@
 package com.team404.uconnect;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -12,7 +13,7 @@ public class SplashScreen extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.splash);
 		setButtons();
 	}
 	private void setButtons() {
@@ -31,7 +32,8 @@ public class SplashScreen extends Activity {
 		
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
+			Intent intent = new Intent(SplashScreen.this,LoginScreen.class);
+			startActivity(intent);
 			
 		}
 	}; 
@@ -40,7 +42,8 @@ public class SplashScreen extends Activity {
 		
 		@Override
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
+			Intent intent = new Intent(SplashScreen.this,SignUp.class);
+			startActivity(intent);
 			
 		}
 	};
