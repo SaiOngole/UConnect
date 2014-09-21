@@ -10,8 +10,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:ems="10"
-        android:inputType="textPersonName" >
-
+        android:inputType="textPersonName" 
+        android:hint="first name">
+		
         <requestFocus />
     </EditText>
 
@@ -23,7 +24,8 @@
         android:layout_below="@+id/firstName"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName" 
+        android:hint="last Name"/>
 
     <EditText
         android:id="@+id/confirmPassword"
@@ -33,7 +35,8 @@
         android:layout_below="@+id/password"
         android:layout_marginTop="35dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword" 
+        android:hint="confirm password"/>
 
     <EditText
         android:id="@+id/email"
@@ -43,7 +46,8 @@
         android:layout_below="@+id/lastName"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress" 
+        android:hint="email ID"/>
 
     <EditText
         android:id="@+id/password"
@@ -53,6 +57,7 @@
         android:layout_below="@+id/email"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword" 
+        android:hint="choose password"/>
 
 </RelativeLayout>
